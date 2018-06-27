@@ -18,7 +18,15 @@ class App extends Component {
         this.onChangeFn = this.onChangeFn.bind(this);
     }
 
-    /* Function listens to changes in input value and Reacts accordingly */
+    /*
+        Function listens to changes in input value and Reacts accordingly:
+        If Input is divisible by 5 and 3
+            Print 'Fizz Buzz''
+        Else If Input is divisible by 5
+            Print 'Buzz''
+        Else If Input is divisible by 3
+            Print 'Fizz''
+    */
     onChangeFn(event) {
         let value = event.target.value;
 
